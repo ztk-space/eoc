@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yn.xqkd.minehome.activity.AboutUsActivity">
+    <com.eoc.dong.common.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:scrollbars="none">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/public_gb_color"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color666666"
+                android:layout_margin="@dimen/size_dp_20"
+                android:textSize="@dimen/size_dp_30"/>
+        </FrameLayout>
+    </com.eoc.dong.common.widget.ReboundScrollView>
+
+</layout>

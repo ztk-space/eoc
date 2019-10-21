@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eoc.dong">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- Folder Permissions in SDCard -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 必选权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 可选权限，不声明此部分权限将放弃部分设备信息的采集，对数据分析及设备指纹的精准度有一定影响 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/eco_ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.order.RepaySuccessActivity"></activity>
+        <activity android:name=".activity.order.WebPayActivity" />
+        <activity android:name=".activity.mine.MessageActivity" />
+        <activity android:name=".activity.mine.ContactServiceActivity" />
+        <activity android:name=".activity.mine.AddMoneyActivity" />
+        <activity android:name=".activity.certification.AuthenticationActivity" />
+        <activity android:name=".activity.certification.BankCardCertificationActivity" />
+        <activity android:name=".activity.login.ForgetPasswordActivity" />
+        <activity android:name=".activity.order.RepaymentActivity" />
+        <activity android:name=".activity.order.RenewalActivity" />
+        <activity android:name=".activity.order.OrderDetailsActivity" />
+        <activity android:name=".activity.order.MyOrderActivity" />
+        <activity android:name=".activity.order.PlaceanOrderActivity" />
+        <activity android:name=".activity.certification.BasicInformationOneActivity" />
+        <activity android:name=".activity.register.RegisterActivity" />
+        <activity android:name=".activity.mine.FeedbackActivity" />
+        <activity android:name=".activity.mine.ChangePasswordActivity" />
+        <activity android:name=".activity.set.SettingActivity" />
+        <activity android:name=".activity.mine.SecretActivity"></activity>
+        <activity android:name=".activity.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.login.LoginActivity" />
+
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+        <meta-data
+            android:name="PARTNER_CODE"
+            android:value="lampDong_vn" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider> <!-- <activity android:name="com.eoc.dong.ui.login.SplashActivity"> -->
+        <!-- &lt;!&ndash; <intent-filter> &ndash;&gt; -->
+        <!-- &lt;!&ndash; <action android:name="android.intent.action.MAIN" /> &ndash;&gt; -->
+        <!-- &lt;!&ndash; <category android:name="android.intent.category.LAUNCHER" /> &ndash;&gt; -->
+        <!-- &lt;!&ndash; </intent-filter> &ndash;&gt; -->
+        <!-- &lt;!&ndash; </activity> &ndash;&gt; -->
+        <!-- &lt;!&ndash; <activity &ndash;&gt; -->
+        <!-- &lt;!&ndash; android:name="com.eoc.dong.ui.main.MainActivity" &ndash;&gt; -->
+        <!-- &lt;!&ndash; android:launchMode="singleTask" /> &ndash;&gt; -->
+        <!-- &lt;!&ndash; <activity android:name="com.eoc.dong.ui.order.VNPayActivity" /> &ndash;&gt; -->
+        <!-- &lt;!&ndash; <activity android:name="com.eoc.dong.TestArouteActivity" /> &ndash;&gt; -->
+        <!-- &lt;!&ndash; -->
+        <!-- <service android:name="com.google.android.gms.analytics.CampaignTrackingService" /> -->
+        <!-- &lt;!&ndash; Google Analytics &ndash;&gt; -->
+        <!-- <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.android.vending.INSTALL_REFERRER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- &lt;!&ndash;自己写的监听广播&ndash;&gt; -->
+        <!-- <receiver -->
+        <!-- android:name=".ChannelReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.android.vending.INSTALL_REFERRER"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- &ndash;&gt; -->
+        <!-- &lt;!&ndash; -->
+        <!-- <receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.android.vending.INSTALL_REFERRER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- &ndash;&gt; -->
+        <receiver
+            android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

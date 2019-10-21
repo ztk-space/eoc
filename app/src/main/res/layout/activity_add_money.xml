@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.yn.alidong.ui.mine.ApplyMoneyActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="@dimen/size_dp_30"
+                android:src="@mipmap/apply_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="invisible"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_dp_450"
+                android:text="恭喜您！获得提额资格"
+                android:textSize="@dimen/size_dp_32"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginTop="@dimen/size_dp_520"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/size_dp_30"
+                android:layout_marginRight="@dimen/size_dp_30"
+                android:background="@drawable/shape_btn_grey_stroke_corner"
+                android:id="@+id/tv_content"
+                android:padding="@dimen/size_dp_20"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_dp_28"
+                android:hint="@string/mine_add_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+        <Button
+            android:layout_marginTop="@dimen/size_dp_50"
+            android:id="@+id/tv_to_loan"
+            android:textSize="@dimen/size_dp_30"
+            android:text="@string/sure"
+            android:textColor="@color/color_white"
+            android:background="@drawable/bg_btn_go_money"
+            android:layout_marginLeft="@dimen/size_dp_70"
+            android:layout_marginRight="@dimen/size_dp_70"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_95" />
+    </LinearLayout>
+</layout>

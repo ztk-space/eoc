@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.eoc.xqkd.mainhome.activity.MainActivity">
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_0"
+            android:layout_weight="1"/>
+        <include layout="@layout/layout_line"/>
+        <LinearLayout
+            android:id="@+id/ll_tab_view"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_100"
+            >
+            <com.eoc.dong.common.widget.NavigationView
+                android:id="@+id/nv_home"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/size_dp_0"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:drawable_src="@drawable/selector_home"
+                app:dse_name="@string/home_title"
+                app:is_select="true"
+                />
+            <com.eoc.dong.common.widget.NavigationView
+                android:id="@+id/nv_mine"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/size_dp_0"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:drawable_src="@drawable/selector_mine"
+                app:dse_name="@string/mine_title"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

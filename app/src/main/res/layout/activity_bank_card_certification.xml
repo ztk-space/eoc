@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="@color/public_gb_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_100">
+
+            <LinearLayout
+                android:id="@+id/ll_vn"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/size_dp_360"
+                android:layout_height="@dimen/size_dp_80">
+
+                <TextView
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeStepGranularity="@dimen/size_dp_2"
+                    app:autoSizeMinTextSize="@dimen/size_dp_10"
+                    app:autoSizeMaxTextSize="@dimen/size_dp_24"
+                    android:id="@+id/tv_bank_type_yhk"
+                    android:text="@string/bank_type_yhk"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/shape_auth_bank_blue"
+                    android:layout_width="@dimen/size_dp_180"
+                    android:layout_height="match_parent" />
+                <TextView
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeStepGranularity="@dimen/size_dp_2"
+                    app:autoSizeMinTextSize="@dimen/size_dp_10"
+                    app:autoSizeMaxTextSize="@dimen/size_dp_24"
+                    android:id="@+id/tv_bank_type_cz"
+                    android:text="@string/bank_type_atm"
+                    android:gravity="center"
+                    android:textColor="@color/public_orange"
+                    android:background="@drawable/shape_auth_bank_white"
+                    android:layout_width="@dimen/size_dp_180"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View
+            android:background="@color/public_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_1"/>
+
+
+
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_100">
+            <TextView
+                android:layout_marginLeft="@dimen/size_dp_20"
+                android:textSize="@dimen/size_dp_25"
+                android:textColor="@color/color333333"
+                android:text="@string/bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_vn_name"
+                android:hint="@string/basic_hint_input"
+                android:textColorHint="@color/color999999"
+                android:gravity="right|center_vertical"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/size_dp_20"
+                android:layout_marginRight="@dimen/size_dp_70"
+                android:textSize="@dimen/size_dp_26"
+                android:textColor="@color/color333333"
+                android:layout_weight="1"
+                android:layout_width="@dimen/size_dp_0"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/public_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_1"/>
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_120">
+            <TextView
+                android:layout_marginLeft="@dimen/size_dp_20"
+                android:textSize="@dimen/size_dp_25"
+                android:textColor="@color/color333333"
+                android:text="@string/bank_yhk_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                app:autoSizeTextType="uniform"
+                app:autoSizeStepGranularity="@dimen/size_dp_2"
+                app:autoSizeMinTextSize="@dimen/size_dp_10"
+                app:autoSizeMaxTextSize="@dimen/size_dp_26"
+                android:id="@+id/et_vn_bank_name"
+                android:textColorHint="@color/color999999"
+                android:hint="@string/basic_hint_option"
+                android:gravity="right|center_vertical"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/size_dp_20"
+                android:layout_marginRight="@dimen/size_dp_20"
+                android:textColor="@color/color333333"
+                android:layout_weight="1"
+                android:layout_width="@dimen/size_dp_0"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_marginRight="@dimen/size_dp_20"
+                android:src="@mipmap/ic_right_arrow"
+                android:layout_width="@dimen/size_dp_35"
+                android:layout_height="@dimen/size_dp_35" />
+        </LinearLayout>
+        <View
+            android:background="@color/public_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_1"/>
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_100">
+            <TextView
+                android:layout_marginLeft="@dimen/size_dp_20"
+                android:textSize="@dimen/size_dp_25"
+                android:textColor="@color/color333333"
+                android:text="@string/bank_yhk_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_vn_bank_num"
+                android:hint="@string/basic_hint_input"
+                android:textColorHint="@color/color999999"
+                android:gravity="right|center_vertical"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/size_dp_20"
+                android:layout_marginRight="@dimen/size_dp_70"
+                android:textSize="@dimen/size_dp_26"
+                android:textColor="@color/color333333"
+                android:layout_weight="1"
+                android:layout_width="@dimen/size_dp_0"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/public_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_1"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_yhk"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="@dimen/size_dp_20"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_100">
+                <TextView
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:textSize="@dimen/size_dp_25"
+                    android:textColor="@color/color333333"
+                    android:text="@string/bank_fh_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_vn_fenhang_name"
+                    android:hint="@string/basic_hint_input"
+                    android:textColorHint="@color/color999999"
+                    android:gravity="right|center_vertical"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:layout_marginRight="@dimen/size_dp_70"
+                    android:textSize="@dimen/size_dp_26"
+                    android:textColor="@color/color333333"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/size_dp_0"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <View
+                android:background="@color/public_line_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_1"/>
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_120">
+                <TextView
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:textSize="@dimen/size_dp_25"
+                    android:textColor="@color/color333333"
+                    android:text="@string/bank_zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeStepGranularity="@dimen/size_dp_2"
+                    app:autoSizeMinTextSize="@dimen/size_dp_10"
+                    app:autoSizeMaxTextSize="@dimen/size_dp_26"
+                    android:id="@+id/et_vn_zone"
+                    android:textColorHint="@color/color999999"
+                    android:hint="@string/basic_hint_option"
+                    android:gravity="right|center_vertical"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:layout_marginRight="@dimen/size_dp_20"
+                    android:textColor="@color/color333333"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/size_dp_0"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_marginRight="@dimen/size_dp_20"
+                    android:src="@mipmap/ic_right_arrow"
+                    android:layout_width="@dimen/size_dp_35"
+                    android:layout_height="@dimen/size_dp_35" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_cz"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/size_dp_20"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_100">
+                <TextView
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:textSize="@dimen/size_dp_25"
+                    android:textColor="@color/color333333"
+                    android:text="@string/bank_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_vn_month"
+                    android:hint="@string/basic_hint_input"
+                    android:textColorHint="@color/color999999"
+                    android:gravity="right|center_vertical"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:layout_marginRight="@dimen/size_dp_70"
+                    android:textSize="@dimen/size_dp_26"
+                    android:textColor="@color/color333333"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/size_dp_0"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <View
+                android:background="@color/public_line_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_1"/>
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_100">
+                <TextView
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:textSize="@dimen/size_dp_25"
+                    android:textColor="@color/color333333"
+                    android:text="@string/bank_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_vn_year"
+                    android:hint="@string/basic_hint_input"
+                    android:textColorHint="@color/color999999"
+                    android:gravity="right|center_vertical"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:layout_marginRight="@dimen/size_dp_70"
+                    android:textSize="@dimen/size_dp_26"
+                    android:textColor="@color/color333333"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/size_dp_0"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/bt_auth_bank_vn"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_90"
+            android:background="@drawable/bg_btn_go_money"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="@dimen/size_dp_40"
+            android:layout_marginBottom="@dimen/size_dp_40"
+            android:layout_marginLeft="@dimen/size_dp_80"
+            android:layout_marginRight="@dimen/size_dp_80"
+            android:textSize="@dimen/size_dp_30"
+            android:textColor="@color/color_white"
+            android:text="@string/basic_btn_tj"/>
+    </LinearLayout>
+</layout>

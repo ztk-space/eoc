@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/size_dp_27"
+    android:paddingRight="@dimen/size_dp_27"
+    android:background="@color/colorWhite"
+    android:layout_height="@dimen/size_dp_85">
+   <TextView
+       android:layout_centerVertical="true"
+       android:id="@+id/tv_name"
+       android:text="工作时间"
+       android:textSize="@dimen/size_dp_30"
+       android:textColor="@color/color333333"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_value"
+            android:text="每天 10点-20点"
+            android:textSize="@dimen/size_dp_27"
+            android:textColor="@color/color999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_arrow_right"
+            android:src="@mipmap/youjiantou"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

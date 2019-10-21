@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size_dp_100"
+    android:layout_marginRight="@dimen/size_dp_100"
+    android:background="@drawable/white_big_corners_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_dp_100">
+    <ImageView
+
+        android:id="@+id/img"
+        android:layout_width="@dimen/size_dp_60"
+        android:layout_height="@dimen/size_dp_60"
+        android:src="@drawable/header_yun_anim" />
+    </LinearLayout>
+
+
+    <TextView
+       android:background="#e5e5e5"
+        android:paddingLeft="@dimen/size_dp_27"
+        android:paddingRight="@dimen/size_dp_27"
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_dp_1" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_dp_100"
+        android:layout_marginTop="@dimen/size_dp_10"
+       >
+       <TextView
+           android:id="@+id/tv_wait"
+           android:layout_marginRight="@dimen/size_dp_8"
+           android:layout_marginLeft="@dimen/size_dp_8"
+           android:textColor="@color/color666666"
+           android:textSize="@dimen/size_dp_30"
+           android:text=""
+           android:lineSpacingExtra="@dimen/size_dp_13"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:background="#e5e5e5"
+        android:paddingLeft="@dimen/size_dp_27"
+        android:paddingRight="@dimen/size_dp_27"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_dp_1" />
+    <TextView
+       android:visibility="gone"
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_dp_100"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/color333333"
+        android:textSize="@dimen/size_dp_36" />
+</LinearLayout>
+</layout>
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_dp_100">
+    <TextView
+        android:textColor="@color/color333333"
+        android:textSize="@dimen/size_dp_28"
+        android:gravity="center"
+        android:id="@+id/tv_auth_vn_channel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <View
+        android:background="@color/public_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_dp_1"></View>
+</RelativeLayout>
+</layout>

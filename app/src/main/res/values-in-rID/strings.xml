@@ -1,0 +1,220 @@
+<resources>
+    //=========================================印尼语言文件=========================================//
+    <string name="app_name">Eco dong</string>
+    <string name="FACEBOOK_APP_ID">1334381220058392</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">622b9154a4e6bb2d4c94e467daa8afe1</string>
+    //=========================================login start=========================================//
+    <string name="login_hint_phone">Nomor ponsel anda</string>
+    <string name="login_hint_sms_code">masukkan kode verifikasi</string>
+    <string name="login_hint_img_code">masukkan pola kode verifikasi</string>
+    <string name="login_login">Log in</string>
+    <string name="login_get_code">Peroleh kode verifikasi</string>
+    <string name="login_toast_phone">Mohon masukkan nomor ponsel</string>
+    <string name="login_toast_sms_code">Mohon masukkan pesan kode verifikasi</string>
+    <string name="login_toast_img_code">Mohon masukkan pola kode verifikasi</string>
+    //=========================================login end=========================================//
+
+    //=========================================mine start=========================================//
+    <string name="mine_order">Pengajuan saya</string>
+    <string name="mine_bank">Pengaturan kartu bank</string>
+    <string name="mine_add_money">Peningkatan</string>
+    <string name="mine_message">Pusat informasi</string>
+    <string name="mine_about">Hubungi kami</string>
+    <string name="mine_setting">Pengaturan</string>
+    <string name="mine_title">Milik saya</string>
+    <string name="mine_state_authed">Telah sertifikasi</string>
+    <string name="mine_state_unauthed">Belum sertifikasi</string>
+    <string name="mine_toast_not_increase">Tidak ada otoritas peningkatan</string>
+    <string name="mine_toast_increasing">Peningkatan sedang di proses</string>
+    <string name="mine_toast_auth_bank">Mohon melakukan sertifikasi kartu bank terlebih dahulu</string>
+    //=========================================mine end=========================================//
+
+    //=========================================home start=========================================//
+    <string name="home_title">Home page</string>
+    <string name="home_imme_apply">Segera memohon</string>
+    <string name="home_imme_loan">Segera meminjam</string>
+    <string name="home_see_order">Memeriksa pengajuan</string>
+    <string name="home_toast_min_max">Nominal terkecil melebihi nominal terbesar</string>
+    <string name="home_toast_lost_money">Belum memperoleh nominal pinjaman</string>
+    //=========================================home end=========================================//
+
+    //=========================================setting start=========================================//
+    <string name="setting_title">Pengaturan</string>
+    <string name="setting_toast_clear">Selesai mengosongkan cache</string>
+    <string name="setting_suggest">Feedback</string>
+    <string name="setting_update">Upgrade versi</string>
+    <string name="setting_clear_memory">Membersihkan cache</string>
+    <string name="setting_exit">Keluar</string>
+    //=========================================setting
+    end=========================================//
+    //====================================money
+    start=================================//
+    //=========================================auth start=========================================//
+    <string name="auth_identity_title">Sertifikasi identitas</string>
+    <string name="auth_phone_title">Sertifikasi operator</string>
+    <string name="auth_toast_identity_authed">Informasi identitas telah di sertifikasi</string>
+    <string name="auth_toast_bank_authed">Kartu bank telah di sertifikasi</string>
+    //=========================================auth end=========================================//
+
+    //=========================================increase money
+    start=========================================//
+    <string name="increase_title">Permohonan peningkatan</string>
+    <string name="increase_toast">Telah menyerahkan permohonan peningkatan</string>
+    //=========================================increase money end=========================================//
+
+    //=========================================about start=========================================//
+    <string name="about_toast_wx">Periksa apakah ponsel anda telah install WeChat, Gunakan fungsi ini setelah instalasi</string>
+    <string name="about_toast_qq">Mohon menginstall QQ kemudian hubungi customer service</string>
+    <string name="about_work_time">Waktu Kerja: Senin - Minggu jam 9:00 - 18:00</string>
+    //=========================================about end=========================================//
+
+    //=========================================loanRecord start=========================================//
+    <string name="lr_num">ID pengajuan</string>
+    <string name="lr_day">Hari</string>
+    <string name="lr_status_sqz">Sedang diajukan</string>
+    <string name="lr_status_shz">sedang ditinjau</string>
+    <string name="lr_status_ddk">Sedang proses transfer</string>
+    <string name="lr_status_dhk">sedang proses pelunasan</string>
+    <string name="lr_status_yq">Keterlambatan</string>
+    <string name="lr_status_yhk">Telah melunaskan</string>
+    <string name="lr_status_refuse">Penolakkan</string>
+    <string name="lr_status_hz">Akun rusak</string>
+    <string name="lr_status_ckz">Proses penarikkan</string>
+    <string name="lr_status_cksb">Gagal menarik</string>
+    <string name="lr_text_money">Nominal (Rupiah)</string>
+    <string name="lr_text_repay">Yang harus dilunaskan (Rupiah)</string>
+    <string name="lr_text_qixian">Batas waktu (Hari)</string>
+    <string name="lr_btn_reneway">Pembaruan pengajuan</string>
+    <string name="lr_btn_pay">Pelunasan</string>
+    //=========================================loanRecord end=========================================//
+
+    //=========================================loanDetail start=========================================//
+    <string name="ld_title">Rincian</string>
+    <string name="ld_text_jkxx">Informasi pinjaman</string>
+    <string name="ld_text_jkje">Nominal pinjaman</string>
+    <string name="ld_text_jkqx">Batas waktu pinjaman</string>
+    <string name="ld_text_dzje">Nominal yang diterima</string>
+    <string name="ld_text_dzyhk">Kartu bank yang diterima</string>
+    <string name="ld_text_ll">Suku bunga</string>
+    <string name="ld_text_zhfy">Total biaya</string>
+    <string name="ld_text_hkxx">Informasi pelunasan</string>
+    <string name="ld_text_yhje">Total nominal yang harus dibayarkan</string>
+    <string name="ld_text_jyxy">Perjanjian transaksi</string>
+    <string name="ld_text_jkxy">《Perjanjian pinjaman》</string>
+    <string name="ld_text_need">Anada harus hadir</string>
+    <string name="ld_text_pay">Pelunasan</string>
+    <string name="ld_text_btn_sq">Memastikan pengajuan</string>
+    //=========================================loanDetail end=========================================//
+
+    //=========================================recordDetail start=========================================//
+    <string name="rd_title">Rincian pengajuan</string>
+    <string name="rd_jkbh">ID pinjaman</string>
+    <string name="rd_sqsj">Waktu pengajuan</string>
+    <string name="rd_ddje">Nominal pengajuan</string>
+    <string name="rd_ddqx">Batas waktu pengajuan</string>
+    <string name="rd_sjdz">Nominal yang diterima</string>
+    <string name="rd_yhbj">Modal yang harus dibayar</string>
+    <string name="rd_yqfy">Biaya keterlambatan</string>
+    //=========================================recordDetail end=========================================//
+
+    //=========================================basic start=========================================//
+    <string name="basic_title">Informasi dasar</string>
+    <string name="basic_btn_tj">Menyerahkan</string>
+
+    //=========================================basic end=========================================//
+
+    //=========================================language dialog
+    start=========================================//
+    <string name="language_qh">Ganti</string>
+    <string name="language_ch">Mandarin sederhana</string>
+    <string name="language_vn">Bahasa Vietnam</string>
+    <string name="language_cancel">Membatalkan</string>
+    <string name="language_option">Memilih bahasa</string>
+    //=========================================language dialog end=========================================//
+
+
+    //=========================================basic one start=========================================//
+    <string name="bone_grxx">Informasi pribadi</string>
+    <string name="bone_xl">Pendidikan:</string>
+    <string name="bone_dzyx">Alamat e-mail:</string>
+    //=========================================basic one
+    end=========================================//
+
+    //=========================================basic two
+    start=========================================//
+    <string name="btwo_gsxx">Informasi perusahaan</string>
+    <string name="btwo_gsmc">Nama perusahaan:</string>
+    <string name="btwo_zw">Posisi:</string>
+    <string name="btwo_gznx">Masa bekerja:</string>
+    <string name="btwo_xz">Upah:</string>
+    <string name="btwo_gsdh">Nomor telepon kantor:</string>
+    <string name="btwo_gswz">Alamat website perusahaan (opsional):</string>
+    <string name="btwo_gsxxdz">Alamat lengkap perusahaan:</string>
+    //=========================================basic two end=========================================//
+
+
+    //=========================================basic three start=========================================//
+    <string name="bthree_lxrxm">Nama kontak yang dapat dihubungi:</string>
+    <string name="bthree_lxrdh">Nomor telepon kontak:</string>
+    <string name="bthree_guanxi">Hubungan dengan kontak:</string>
+    <string name="bthree_person_one">Kontak emergensi 1</string>
+    <string name="bthree_person_two">Kontak emergensi 2</string>
+
+    //=========================================basic three
+    end=========================================//
+
+    <string name="basic_hint_input">Mohon diisi</string>
+    <string name="basic_hint_option">Mohon memilih</string>
+    <string name="basic_toast_finish">Mohon menyelesaikan data</string>
+    <string name="op_option">Opsional</string>
+    <string name="yhk_auth">Sertifikasi kartu bank</string>
+    <string name="face_zheng">Bagian depan KTP</string>
+    <string name="face_fan">Bagian belakang KTP</string>
+    <string name="upload_camera">Mohon mengunggah foto</string>
+    <string name="per_camera">Silahkan ke aplikasi untuk mengaktifkan otoritas kamera</string>
+    <string name="per_store">Silahkan ke aplikasi untuk mengaktifkan otoritas penyimpanan</string>
+
+    //=========================================bank vn start=========================================//
+    <string name="bank_name">Nama</string>
+    <string name="bank_yhk_name">Nama bank</string>
+    <string name="bank_yhk_num">Nomor kartu bank</string>
+    <string name="bank_fh_name">Nama cabang</string>
+    <string name="bank_zone">Area</string>
+    <string name="bank_month">Bulan kadaluwarsa</string>
+    <string name="bank_year">Tahun kadaluwarsa</string>
+    <string name="bank_type_yhk">Nomor rekening</string>
+    <string name="bank_type_atm">Kartu ATM</string>
+    //=========================================bank vn end=========================================//
+
+
+    <string name="renewal_title">Pembaruan</string>
+    <string name="money">Rupiah</string>
+    <string name="network_load">Sedang memuat...</string>
+    <string name="sure">Memastikan</string>
+    <string name="jine">Nominal</string>
+
+
+    //=========================================renewal
+    start=========================================//
+    <string name="xqqx">Batas waktu pembaruan</string>
+    <string name="xqhkr">Pembaruan tanggal pelunasan</string>
+    <string name="dqyh">Pelunasan jatuh tempo</string>
+    <string name="xqfy">Biaya pembaruan</string>
+    <string name="bqlx">Bunga saat ini</string>
+    <string name="yqfy">Biaya keterlambatan</string>
+    <string name="hjykje">Jumlah yang harus dikurang</string>
+    //=========================================renewal end=========================================//
+
+    <string name="fwf">Biaya pelayanan</string>
+    <string name="lixi">Bunga</string>
+    <string name="knowl">Saya mengerti</string>
+
+
+    <string name="face_name">Nama:</string>
+    <string name="face_num_id">NIK:</string>
+
+    <string name="secret_title">Kebijakan privasi</string>
+    <string name="birth">Tanggal lahir:</string>
+    <string name="phone">Nomor telepon cutomer service</string>
+    <string name="auth_toast_order">Mohon selesaikan sertifikasi langkah sebelumnya</string>
+</resources>

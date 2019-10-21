@@ -1,0 +1,9 @@
+auto generated, do not change !!!! 
+
+HOST : kotlin
+
+∑÷œÌ‘”÷æ“≥√Ê
+/shareMagazine
+author:com.luojilab.componentservice.share.bean.AuthorKt
+bookName:String
+

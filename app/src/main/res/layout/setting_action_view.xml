@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingLeft="@dimen/size_dp_27"
+    android:paddingRight="@dimen/size_dp_27"
+    android:layout_height="@dimen/size_dp_100">
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_dp_27"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="今日推荐次数"
+        android:textSize="@dimen/size_dp_30"
+        android:textColor="@color/color333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+       android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_arrow_right"
+        android:src="@mipmap/youjiantou"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_alignParentBottom="true"
+        android:background="@color/public_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_dp_1"/>
+
+</RelativeLayout>

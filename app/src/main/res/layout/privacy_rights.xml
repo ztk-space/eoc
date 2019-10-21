@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_dp_100"
+        android:layout_marginLeft="@dimen/liveness_20"
+        android:layout_marginRight="@dimen/liveness_20"
+        android:layout_marginBottom="@dimen/liveness_50"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webview0"
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+        </WebView>
+        <Button
+            android:layout_weight="0.5"
+            android:textAllCaps="false"
+            android:id="@+id/btn_agree"
+            android:layout_marginBottom="@dimen/liveness_10"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/webview"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_bg_btn_blue"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="@dimen/size_dp_10"
+            android:layout_marginLeft="@dimen/size_dp_160"
+            android:layout_marginRight="@dimen/size_dp_160"
+            android:textSize="@dimen/size_dp_30"
+            android:textColor="@color/color_white"
+            android:text="确认"/>
+    </LinearLayout>
+</RelativeLayout>

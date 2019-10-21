@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_message_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_dp_10"
+            android:layout_marginTop="@dimen/size_dp_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_dp_10"
+                android:layout_height="@dimen/size_dp_10"
+                android:layout_margin="@dimen/size_dp_5"
+                android:src="@drawable/shape_red_point"/>
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="租赁取消"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/size_dp_30"/>
+        </LinearLayout>
+
+        <include layout="@layout/layout_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dian"
+                android:layout_width="@dimen/size_dp_10"
+                android:layout_height="@dimen/size_dp_10"
+                android:layout_marginLeft="@dimen/size_dp_5"
+                android:layout_marginRight="@dimen/size_dp_5"
+                android:layout_marginTop="@dimen/size_dp_20"
+                android:src="@drawable/shape_red_point"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/message_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_dp_20"
+                android:layout_marginTop="@dimen/size_dp_20"
+                android:layout_toRightOf="@+id/dian"
+                android:text="尊敬的用户尊敬的用户尊敬的用户尊敬的用户尊敬的用户尊敬的用户尊敬的用户"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/size_dp_28"/>
+
+            <TextView
+                android:id="@+id/message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_content"
+                android:layout_marginBottom="@dimen/size_dp_20"
+                android:layout_marginRight="@dimen/size_dp_20"
+                android:layout_marginTop="@dimen/size_dp_20"
+                android:layout_toRightOf="@+id/dian"
+                android:text="2017-06-21"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/size_dp_28"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        vectorDrawables.useSupportLibrary = true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+        
+    }
+}
+dependencies {
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    api(name: 'liveness_lib_v1.1.3', ext: 'aar')
+    api(name: 'guardian_core_v1.0', ext: 'aar')
+    annotationProcessor "com.alibaba:arouter-compiler:1.2.2"
+    api project(':base_module')
+}

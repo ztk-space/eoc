@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.eoc.dong.common.widget.SettingActionView
+            android:id="@+id/set_pwd"
+            app:is_show_arrow="true"
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_95"
+            app:is_show_line="false"
+            app:title_name="@string/setting_pwd" />
+        <View
+            android:layout_marginLeft="@dimen/size_dp_20"
+            android:layout_marginRight="@dimen/size_dp_20"
+            android:layout_width="match_parent"
+            android:background="@color/public_line_color"
+            android:layout_height="@dimen/size_dp_2"></View>
+        <com.eoc.dong.common.widget.SettingActionView
+            android:id="@+id/set_suggest"
+            app:is_show_arrow="true"
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_95"
+            app:is_show_line="false"
+            app:title_name="@string/setting_suggest" />
+        <View
+            android:layout_marginLeft="@dimen/size_dp_20"
+            android:layout_marginRight="@dimen/size_dp_20"
+            android:layout_width="match_parent"
+            android:background="@color/public_line_color"
+            android:layout_height="@dimen/size_dp_2"></View>
+        <com.eoc.dong.common.widget.SettingActionView
+            android:id="@+id/set_update"
+            app:is_show_arrow="true"
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_95"
+            app:is_show_line="false"
+            app:title_name="@string/setting_update" />
+        <View
+            android:layout_marginLeft="@dimen/size_dp_20"
+            android:layout_marginRight="@dimen/size_dp_20"
+            android:layout_width="match_parent"
+            android:background="@color/public_line_color"
+            android:layout_height="@dimen/size_dp_2"></View>
+        <com.eoc.dong.common.widget.SettingActionView
+            android:id="@+id/set_clear_memory"
+            app:is_show_arrow="true"
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_95"
+            app:is_show_line="false"
+            app:title_name="@string/setting_clear_memory" />
+        <Button
+            android:id="@+id/exit"
+            android:textSize="@dimen/size_dp_25"
+            android:textColor="@color/color_white"
+            android:background="@drawable/bg_btn_go_money"
+            android:layout_marginTop="@dimen/size_dp_100"
+            android:text="@string/setting_exit"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/size_dp_50"
+            android:layout_marginRight="@dimen/size_dp_50"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+</layout>

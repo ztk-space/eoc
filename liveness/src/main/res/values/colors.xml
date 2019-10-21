@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="liveness_transparent">#00000000</color>
+    <color name="liveness_camera_bg">#B8000000</color>
+    <color name="liveness_camera_bg_light">#B8ffffff</color>
+    <color name="liveness_primary_hint_text_color">#999999</color>
+    <color name="liveness_shadow_start_color">#5BC414</color>
+    <color name="liveness_shadow_end_color">#0FA80B</color>
+
+</resources>

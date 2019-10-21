@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ai.smallloan.account.activity.LoginActivity">
+    <RelativeLayout
+        android:background="@mipmap/login"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <ImageView
+            android:layout_marginLeft="@dimen/size_dp_50"
+            android:id="@+id/iv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_dp_400"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon"
+           />
+
+        <LinearLayout
+            android:layout_below="@id/iv_login"
+            android:id="@+id/ll_account"
+            android:layout_marginTop="@dimen/size_dp_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_dp_90"
+            android:layout_marginLeft="@dimen/size_dp_90"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="@dimen/size_dp_20"
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:src="@mipmap/mob_login"
+                    android:layout_width="@dimen/size_dp_25"
+                    android:layout_height="@dimen/size_dp_35" />
+                <TextView
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/size_dp_25"
+                    android:text="+62"
+                    android:layout_width="wrap_content"
+                    android:inputType="number"
+                    android:layout_height="@dimen/size_dp_98" />
+                <EditText
+                    android:layout_marginLeft="@dimen/size_dp_10"
+                    android:id="@+id/et_phone"
+                    android:background="@null"
+                    android:hint="@string/login_hint_phone"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/size_dp_25"
+                    android:textColorHint="#b7b7b7"
+                    android:layout_width="match_parent"
+                    android:maxLength="13"
+
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:inputType="number"
+                    android:layout_height="@dimen/size_dp_98" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_1"
+                android:background="@color/public_line_color"/>
+            <LinearLayout
+                android:id="@+id/ll_pic"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_86"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/ed_verification_code"
+                    android:layout_width="@dimen/size_dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/size_dp_28"
+                    android:hint="@string/login_hint_img_code"
+                    android:textColorHint="#b7b7b7"
+                    android:textColor="@color/color333333"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:background="@null"/>
+                <ImageView
+                    android:id="@+id/iv_verification_code"
+                    android:layout_width="@dimen/size_dp_200"
+                    android:layout_height="@dimen/size_dp_60"
+                    android:layout_marginRight="@dimen/size_dp_20"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_1"
+                android:background="@color/public_line_color"/>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="@dimen/size_dp_20"
+                    android:layout_marginLeft="@dimen/size_dp_20"
+                    android:src="@mipmap/pw_login"
+                    android:layout_width="@dimen/size_dp_30"
+                    android:layout_height="@dimen/size_dp_35" />
+
+                <EditText
+                    android:id="@+id/et_psw"
+                    android:layout_width="201dp"
+                    android:layout_height="@dimen/size_dp_98"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/setting_password"
+                    android:inputType="number"
+                    android:textColor="@color/color333333"
+                    android:textColorHint="#b7b7b7"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/size_dp_25" />
+                <RelativeLayout
+                    android:id="@+id/re_forgetpassword"
+                    android:layout_width="@dimen/size_dp_140"
+                    android:layout_height="@dimen/size_dp_60">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/size_dp_18"
+                        android:text="@string/login_forget_pwd"
+                        android:layout_height="wrap_content"></TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_1"
+                android:background="@color/public_line_color"/>
+        </LinearLayout>
+        <Button
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_dp_90"
+            android:background="@drawable/shape_bg_btn_blue"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_below="@+id/ll_account"
+            android:layout_marginTop="@dimen/size_dp_120"
+            android:layout_marginLeft="@dimen/size_dp_80"
+            android:layout_marginRight="@dimen/size_dp_80"
+            android:textSize="@dimen/size_dp_30"
+            android:textColor="@color/color_white"
+            android:text="@string/login_login"/>
+    <Button
+        android:id="@+id/iv_face_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_dp_90"
+        android:background="@drawable/bg_btn_go_money"
+        android:layout_marginTop="@dimen/size_dp_350"
+        android:layout_marginLeft="@dimen/size_dp_80"
+        android:layout_marginRight="@dimen/size_dp_80"
+        android:textSize="@dimen/size_dp_30"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/iv_login"
+        android:text="@string/login_login"/>
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/liveness_18"
+            android:layout_marginTop="@dimen/size_dp_50"
+            android:layout_below="@id/iv_face_login"
+            android:text="@string/login_registered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/size_dp_50"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_language"
+                android:text=""
+                android:textColor="@color/color666666"
+                android:textSize="@dimen/size_dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="@dimen/size_dp_6"
+                android:layout_marginRight="@dimen/size_dp_6"
+                android:text="•"
+                android:textColor="@color/color666666"
+                android:textSize="@dimen/size_dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_switch"
+                android:text="@string/language_qh"
+                android:textColor="@color/public_orange"
+                android:textSize="@dimen/size_dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+</layout>

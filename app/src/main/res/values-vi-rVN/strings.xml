@@ -1,0 +1,239 @@
+<resources>
+    //=========================================越南语言文件===============1==========================//
+    <string name="app_name">Eco dong</string>
+    <string name="FACEBOOK_APP_ID">1334381220058392</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">622b9154a4e6bb2d4c94e467daa8afe1</string>
+
+    //=========================================login start===============1==========================//
+    <string name="login_hint_phone">Số điện thoại của bạn</string>
+    <string name="login_hint_sms_code">Mời nhập mã xác nhận</string>
+    <string name="login_forget_pwd">Quên mật khẩu?</string>
+    <string name="login_registered">Đăng ký</string>
+    <string name="login_hint_img_code">Nhập mã xác minh</string>
+    <string name="login_hint_img_code_go">Mã xác minh đồ họa đã được gửi</string>
+    <string name="login_hint_img_sms_go">Mã xác minh SMS đã được gửi</string>
+    <string name="login_login">Đăng nhập</string>
+    <string name="login_get_code">lấy mã xác minh</string>
+    <string name="login_toast_phone">Vui lòng nhập số điện thoại của bạn</string>
+    <string name="login_toast_sms_code">Mời nhập mã xác nhận</string>
+    <string name="login_toast_img_code">Vui lòng nhập mã xác minh</string>
+    <string name="login_register">Đại diện cho sự đồng ý</string>
+    <string name="login_protocol">《**Thỏa thuận dịch vụ》</string>
+    <string name="login_signupnow">Đăng ký ngay lập tức</string>
+    //=========================================login end=========================================//
+
+    //=========================================mine start==========1===============================//
+    <string name="mine_order">Đơn hàng của tôi</string>
+    <string name="go_money">Để có được tiền</string>
+    <string name="home_face">Nhận dạng khuôn mặt</string>
+    <string name="home_backs">Thẻ ngân hàng</string>
+    <string name="mine_bank">Quản lý tài khoản ngân hàng</string>
+    <string name="mine_add_money">Nâng hạn mức</string>
+    <string name="mine_message">Trung tâm tin nhắn</string>
+    <string name="mine_about_us">Về chúng ta</string>
+    <string name="mine_about">Liên hệ</string>
+    <string name="mine_setting">Cài đặt</string>
+    <string name="mine_title">Của tôi</string>
+    <string name="mine_state_authed">Đã chứng nhận</string>
+    <string name="mine_state_unauthed">Chưa xác nhận</string>
+    <string name="mine_toast_not_increase">Không có điều khoản để đủ điều kiện</string>
+    <string name="mine_toast_increasing">Được nâng</string>
+    <string name="mine_toast_auth_bank">Trước tiên hãy xác minh thẻ ngân hàng của bạn</string>
+    //=========================================mine end=========================================//
+
+    //=========================================home start===========1==============================//
+    <string name="home_title">Trang chủ</string>
+    <string name="home_imme_apply">Đăng ký ngay</string>
+    <string name="home_imme_loan">Vay ngay lập tức</string>
+    <string name="home_see_order">Xem thứ tự</string>
+    <string name="home_toast_min_max">Số tiền tối thiểu lớn hơn số tiền tối đa</string>
+    <string name="home_toast_lost_money">Không có khoản vay nào</string>
+    //=========================================home end=========================================//
+
+    //=========================================setting
+    start=========================================//
+    <string name="setting_title">Cài đặt</string>
+    <string name="setting_toast_clear">Xóa bộ nhớ cache hoàn tất</string>
+    <string name="setting_suggest">Phản hồi</string>
+    <string name="setting_pwd">Thay đổi mật khẩu</string>
+    <string name="setting_update">Nâng cấp phiên bản</string>
+    <string name="setting_clear_memory">Dọn dẹp bộ đệm</string>
+    <string name="setting_exit">Lối thoát an toàn</string>
+    <string name="setting_phone">      Hãy nhập mã xác minh số điện thoại di động</string>
+    <string name="setting_code">Hãy nhập captcha</string>
+    <string name="setting_oldpassword">Vui lòng nhập mật khẩu gốc</string>
+    <string name="setting_password">Xin vui lòng nhập mật khẩu</string>
+    <string name="setting_password1">Xin vui lòng xác nhận mật khẩu</string>
+    <string name="setting_get">Nhận được mã xác minh</string>
+    //=========================================setting
+    end=========================================//
+
+    //=========================================auth start=========================================//
+    <string name="auth_identity_title">Xác thực danh tính</string>
+    <string name="auth_phone_title">Chứng nhận nhà mạng</string>
+    <string name="auth_toast_identity_authed">Thông tin nhận dạng đã được chứng nhận</string>
+    <string name="auth_toast_bank_authed">Thông tin thẻ ngân hàng đã được chứng nhận</string>
+    //=========================================auth end=========================================//
+
+    //=========================================increase money
+    start=========================================//
+    <string name="increase_title">Đơn xin số tiền</string>
+    <string name="increase_toast">Đơn xin nộp đã được nộp</string>
+    //=========================================increase money end=========================================//
+
+    //=========================================about start=========================================//
+    <string name="about_toast_wx">Kiểm tra xem điện thoại của bạn chưa cài đặt WeChat, vui lòng sử dụng chức năng này sau khi cài đặt.</string>
+    <string name="about_toast_qq">Vui lòng cài đặt QQ trước và sau đó liên hệ với nhân viên dịch vụ khách hàng.</string>
+    <string name="about_work_time">Giờ làm việc: (Thứ Hai đến Chủ Nhật 9:00 - 18:00)</string>
+    //=========================================about end=========================================//
+
+    //=========================================loanRecord start=========================================//
+    <string name="lr_num">Số thứ tự</string>
+    <string name="lr_day">Ngày</string>
+    <string name="lr_status_sqz">Đang đăng ký</string>
+    <string name="lr_status_shz">Đang xét duyệt</string>
+    <string name="lr_status_ddk">Đang thanh toán</string>
+    <string name="lr_status_dhk">Đang hoàn tiền</string>
+    <string name="lr_status_yq">Quá hạn</string>
+    <string name="lr_status_yhk">Đã hoàn tiền</string>
+    <string name="lr_status_refuse">Từ chối</string>
+    <string name="lr_status_hz">Nợ xấu</string>
+    <string name="lr_status_ckz">Đang xuất tiền</string>
+    <string name="lr_status_cksb">Xuất tiền thất bại</string>
+    <string name="lr_text_money">Số tiền cho vay</string>
+    <string name="lr_text_repay">Số tiền cần hoàn trả</string>
+    <string name="lr_text_qixian">Kỳ hạn(ngày)</string>
+    <string name="lr_btn_reneway">Gia hạn</string>
+    <string name="lr_btn_pay">Trả nợ</string>
+    //=========================================loanRecord end=========================================//
+
+    //=========================================loanDetail start=========================================//
+    <string name="ld_title">Chi tiết</string>
+    <string name="ld_text_jkxx">Thông tin khoản vay</string>
+    <string name="ld_text_jkje">Số tiền vay</string>
+    <string name="ld_text_jkqx">Kỳ hạn vay</string>
+    <string name="ld_text_dzje">Số lượng tiền đã chuyển</string>
+    <string name="ld_text_dzyhk">Số lượng tiền đã chuyển đến tài khoản ngân hàng</string>
+    <string name="ld_text_ll">Lãi suất</string>
+    <string name="ld_text_zhfy">Chi phí tổng hợp</string>
+    <string name="ld_text_hkxx">Thông tin trả nợ</string>
+    <string name="ld_text_yhje">Tổng số tiền cần trả</string>
+    <string name="ld_text_jyxy">Thỏa thuận giao dịch</string>
+    <string name="ld_text_jkxy">《Hợp đồng cho vay》</string>
+    <string name="ld_text_need">Bạn cần </string>
+    <string name="ld_text_pay">Trả nợ</string>
+    <string name="ld_text_btn_sq">Xác nhận đơn</string>
+    //=========================================loanDetail end=========================================//
+
+    //=========================================recordDetail start=========================================//
+    <string name="rd_title">Chi tiết đặt hàng</string>
+    <string name="rd_jkbh">Số cho vay</string>
+    <string name="rd_sqsj">Thời gian nộp đơn</string>
+    <string name="rd_ddje">Số lượng đặt hàng</string>
+    <string name="rd_ddqx">Thời gian đặt hàng</string>
+    <string name="rd_sjdz">Đến thực tế</string>
+    <string name="rd_yhbj">Nên trả lại tiền gốc</string>
+    <string name="rd_yqfy">Phí quá hạn</string>
+    //=========================================recordDetail end=========================================//
+
+    //=========================================basic start=========================================//
+    <string name="basic_title">Thông tin cơ bản</string>
+    <string name="basic_btn_tj">Gửi</string>
+
+    //=========================================basic end=========================================//
+
+    //=========================================language dialog
+    start=========================================//
+    <string name="language_qh">Chuyển đổi</string>
+    <string name="language_ch">Tiếng Trung giản thể(简体中文)</string>
+    <string name="language_vn">Tiếng việt(越南语)</string>
+    <string name="language_cancel">Hủy bỏ</string>
+    <string name="language_option">Chọn ngôn ngữ</string>
+    //=========================================language dialog end=========================================//
+
+
+    //=========================================basic one start=========================================//
+    <string name="bone_grxx">Thông tin cá nhân</string>
+    <string name="bone_xl">Học vấn:</string>
+    <string name="bone_dzyx">Thư điện tử:</string>
+    //=========================================basic one
+    end=========================================//
+
+    //=========================================basic two
+    start=========================================//
+    <string name="btwo_gsxx">Thông tin công ty</string>
+    <string name="btwo_gsmc">Tên công ty:</string>
+    <string name="btwo_zw">Chức vị:</string>
+    <string name="btwo_gznx">Số năm làm việc:</string>
+    <string name="btwo_xz">Lương hàng tháng:</string>
+    <string name="btwo_gsdh">Số điện thoại công ty:</string>
+    <string name="btwo_gswz">Trang Web của công ty(Không bắt buộc):</string>
+    <string name="btwo_gsxxdz">Địa chỉ cụ thể:</string>
+    //=========================================basic two end=========================================//
+
+    //=========================================basic three start=========================================//
+    <string name="bthree_lxrxm">Tên người liên hệ khẩn:</string>
+    <string name="bthree_lxrdh">Số điện thoại người liên hệ khẩn:</string>
+    <string name="bthree_guanxi">Quan hệ:</string>
+    <string name="bthree_person_one">Liên hệ khẩn1</string>
+    <string name="bthree_person_two">Liên hệ khẩn2</string>
+    //=========================================basic three
+    end=========================================//
+
+    <string name="basic_hint_input">Vui lòng nhập</string>
+    <string name="basic_hint_option">Vui lòng chọn</string>
+    <string name="basic_toast_finish">Vui lòng hoàn thiện thông tin</string>
+    <string name="basic_toast_finish1">Vui lòng điền đúng định dạng email</string>
+    <string name="op_option">Không bắt buộc</string>
+    <string name="yhk_auth">Xác nhận tài khoản ngân hàng</string>
+    <string name="face_zheng">Mặt trước CMND</string>
+    <string name="face_fan">Mặt sau CMND</string>
+    <string name="upload_camera">Vui lòng tải ảnh lên</string>
+    <string name="per_camera">Vui lòng bật quyền camera</string>
+    <string name="per_store">Vui lòng mở quyền lưu trữ</string>
+
+    //=========================================bank vn start=========================================//
+    <string name="bank_name">Họ và tên</string>
+    <string name="bank_yhk_name">Tài khoản ngân hàng</string>
+    <string name="bank_yhk_num">Số tài khoản ngân hàng</string>
+    <string name="bank_fh_name">Chi nhánh ngân hàng</string>
+    <string name="bank_zone">Ngân hàng tỉnh</string>
+    <string name="bank_month">Kỳ hạn thẻ tiết kiệm (tháng)</string>
+    <string name="bank_year">Kỳ hạn thẻ tiết kiệm (năm)</string>
+    <string name="bank_type_yhk">Tài khoản ngân hàng</string>
+    <string name="bank_type_atm">Thẻ ATM</string>
+    //=========================================bank vn end=========================================//
+
+    <string name="renewal_title">Gia hạn</string>
+    <string name="money">VNĐ</string>
+    <string name="network_load">Đang tải...</string>
+    <string name="sure">Xác nhận</string>
+    <string name="jine">Số tiền</string>
+
+    //=========================================renewal
+    start=========================================//
+    <string name="xqqx">Kì hạn gia hạn</string>
+    <string name="xqhkr">Ngày hoàn lại gia hạn</string>
+    <string name="dqyh">Đáo hạn cần hoàn lại</string>
+    <string name="xqfy">Phí gia hạn</string>
+    <string name="bqlx">Lãi suất hiện tại</string>
+    <string name="yqfy">Mức phí quá hạn</string>
+    <string name="hjykje">Tổng số tiền cần khấu</string>
+    //=========================================renewal end=========================================//
+
+    <string name="fwf">Phí dịch vụ</string>
+    <string name="lixi">Lãi suất</string>
+    <string name="knowl">Tôi đã hiểu</string>
+
+    <string name="face_name">Họ và tên:</string>
+    <string name="face_num_id">Số CMND:</string>
+
+    <string name="secret_title">Chính sách bảo mật</string>
+    <string name="birth">Ngày sinh:</string>
+    <string name="phone">Điện thoại</string>
+    <string name="auth_toast_order">Vui lòng hoàn thành bước xác minh trước</string>
+
+    <string name="passwordtwice">Mật khẩu đầu vào không nhất quán hai lần</string>
+    <string name="completecertification">Xin vui lòng hoàn thành chứng nhận</string>
+
+</resources>
