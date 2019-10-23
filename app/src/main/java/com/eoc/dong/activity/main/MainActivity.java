@@ -45,6 +45,7 @@ public class MainActivity extends BaseActivity<MainActivityPresenter,ActivityMai
         mCurrTab = mBindingView.nvHome;
         hideTitleBar();
         initFragment();
+        mPresenter.checkUpdate();
     }
 
 

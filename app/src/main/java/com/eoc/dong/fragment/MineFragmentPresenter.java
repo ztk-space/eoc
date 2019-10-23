@@ -42,6 +42,25 @@ public class MineFragmentPresenter extends BasePresenter<MineFragment> {
                     }
                 });
     }
+    public void checkAuthStatusOne() {
+        RetrofitHelper.getRetrofit().create(Api.class).getAuthStatus(SharedPreUtil.getInt("id",0)).enqueue(
+                new BaseCallBack<BaseResponse<AuthStateResponse>>(mContext) {
+                    @Override
+                    public void onSuccess(Call<BaseResponse<AuthStateResponse>> call, Response<BaseResponse<AuthStateResponse>> response) {
+                        if (response.body().isSuccess()){
+                            mView.setcheckAuthStatusOne(response.body().getData());
+                        }else{
+                            CommonUtil.showToast(response.body().getMsg());
+                        }
+                    }
+
+                    @Override
+                    public void onFinish() {
+                        super.onFinish();
+
+                    }
+                });
+    }
     void getLvupPower() {
         RetrofitHelper.getRetrofit().create(Api.class).LvupPower(SharedPreUtil.getInt("id",0)).enqueue(
                 new BaseCallBack<BaseResponse<LvupPowerResponse>>(mContext) {

@@ -4,6 +4,7 @@ import android.view.View;
 
 import com.eoc.dong.R;
 import com.eoc.dong.common.base.BaseFragment;
+import com.eoc.dong.common.network.response.AuthStateResponse;
 import com.eoc.dong.common.network.response.LvupPowerResponse;
 import com.eoc.dong.common.utils.CommonUtil;
 import com.eoc.dong.common.utils.SharedPreUtil;
@@ -23,6 +24,7 @@ public class MineFragment extends BaseFragment<MineFragmentBinding, MineFragment
         hideBackImg();
         setTitle(getResources().getString(R.string.mine_title));
         mBindingView.tvMinePhone.setText(SharedPreUtil.getString("phone",""));
+        mPresenter.checkAuthStatusOne();
     }
 
     @Override
@@ -69,5 +71,11 @@ public class MineFragment extends BaseFragment<MineFragmentBinding, MineFragment
             CommonUtil.showToast(getResources().getString(R.string.mine_toast_increasing));
         }
     }
-
+ public void setcheckAuthStatusOne(AuthStateResponse authStateResponse){
+        if(authStateResponse.bankAuth==1){
+            mBindingView.tvRenzheng.setText(getResources().getString(R.string.mine_state_authed));
+        }else {
+            mBindingView.tvRenzheng.setText(getResources().getString(R.string.mine_state_unauthed));
+        }
+ }
 }
